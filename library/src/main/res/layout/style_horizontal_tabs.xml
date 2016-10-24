@@ -25,19 +25,29 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
             android:background="@android:color/white"
-            android:elevation="5dp"
-            android:minHeight="?attr/actionBarSize">
+            android:elevation="5dp">
+
+            <HorizontalScrollView
+                android:id="@+id/steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:minHeight="72dp"
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:id="@+id/stepTabs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
                     android:paddingLeft="12dp"
                     android:paddingRight="12dp"/>
+
+            </HorizontalScrollView>
 
         </RelativeLayout>
 
